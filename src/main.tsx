@@ -4,6 +4,7 @@ import './App.css';
 import { gql, useQuery } from '@apollo/client';
 import { Product, World } from '../world'
 import ProductComponent from './product';
+import { transform } from './utils';
 
 type MainProps = {
     loadworld: World
@@ -19,14 +20,14 @@ export default function Main({ loadworld, username } : MainProps) {
     <div className="App">
         <div className="header">
         <span> {world.name} </span>
-            <img src={ src } className="logo round"/>
-          <div> argent </div>
+            <img src={ src } className="round logoPrincipal"/>
+            <span dangerouslySetInnerHTML={{__html: transform(world.money)}}/>
           <div> multiplicateur </div>
           <div> ID du joueur </div>
           
         </div>
         <div className="main">
-          <div> liste des boutons de menu </div>
+          <div className='borderBlanc'> liste des boutons de menu </div>
           <div className="product">
           {world.products.map(prod=>
           <ProductComponent prod={prod} />

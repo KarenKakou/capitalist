@@ -59,17 +59,19 @@
   grid-template-columns: 1fr 1fr;
   }
 
+  .logoPrincipal{
+    height: 250px;
+  }
 
   .logo{
     display: inline-block;
     height: 200px;
-    
   }
 
 
   .round {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%
     }
 
@@ -77,6 +79,7 @@
     .lesdeux {
       position: relative;
       }
+    
       .lesecond {
       position: absolute;
       bottom: -10px;
@@ -88,6 +91,15 @@
       background-color: red;
       margin-right: 10px;
     }
-     
 
+  .produit{
+    margin-bottom: 15px;
+    margin-right: 10px;
+    border-bottom: 2px solid white;
+
+  }
+  
+.borderBlanc{
+  border: 2px solid white;
+}
 
