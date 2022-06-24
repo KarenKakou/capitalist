@@ -19,8 +19,8 @@ export default function Main({ loadworld, username } : MainProps) {
     <div>
     <div className="App">
         <div className="header">
-        <span> {world.name} </span>
             <img src={ src } className="round logoPrincipal"/>
+            <span> {world.name} </span>
             <span dangerouslySetInnerHTML={{__html: transform(world.money)}}/>
           <div> multiplicateur </div>
           <div> ID du joueur </div>

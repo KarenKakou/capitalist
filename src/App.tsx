@@ -84,7 +84,7 @@ function App() {
 
   let name = localStorage.getItem("username");
   if (!name) {
-    name = "lama"+ Math.round(Math.random()* 1000)
+    name = "Chtulu"+ Math.round(Math.random()* 1000)
   }
   const [username, setUsername] = useState(name);
 
